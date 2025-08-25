@@ -28,4 +28,14 @@ fun `remove by isbn`() {
     org.junit.jupiter.api.Assertions.assertTrue(removed)
     org.junit.jupiter.api.Assertions.assertEquals(1, inv.count())
 }
+@Test
+fun `find by author case-insensitive`() {
+    val inv = BookInventory()
+    inv.add(Book("1","A","Alice"))
+    inv.add(Book("2","B","Bob"))
+    inv.add(Book("3","C","alice"))
+    val byAlice = inv.findByAuthor("ALICE")
+    org.junit.jupiter.api.Assertions.assertEquals(listOf("A","C"), byAlice.map { it.title })
+}
+
 }
