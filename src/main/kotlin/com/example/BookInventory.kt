@@ -9,4 +9,5 @@ class BookInventory {
     	require(!byIsbn.containsKey(book.isbn)) { "ISBN already exists: ${book.isbn}" }
     	byIsbn[book.isbn] = book
 }
+fun removeByIsbn(isbn: String): Boolean = byIsbn.remove(isbn) != null
 }

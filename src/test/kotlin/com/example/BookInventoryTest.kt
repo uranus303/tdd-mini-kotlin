@@ -20,4 +20,12 @@ class BookInventoryTest {
         assertTrue(ex.message!!.contains("ISBN already exists"))
     }
 
+@Test
+fun `remove by isbn`() {
+    val inv = BookInventory()
+    inv.add(Book("111","A","X")); inv.add(Book("222","B","Y"))
+    val removed = inv.removeByIsbn("111")
+    org.junit.jupiter.api.Assertions.assertTrue(removed)
+    org.junit.jupiter.api.Assertions.assertEquals(1, inv.count())
+}
 }
