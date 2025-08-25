@@ -1,2 +1,2 @@
-rootProject.name = "tdd-mini-kotline"
+rootProject.name = "tdd-mini-kotlin"
 
