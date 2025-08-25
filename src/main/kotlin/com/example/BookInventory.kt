@@ -10,4 +10,7 @@ class BookInventory {
     	byIsbn[book.isbn] = book
 }
 fun removeByIsbn(isbn: String): Boolean = byIsbn.remove(isbn) != null
+fun findByAuthor(author: String): List<Book> =
+    byIsbn.values.filter { it.author.equals(author.trim(), ignoreCase = true) }
+
 }
