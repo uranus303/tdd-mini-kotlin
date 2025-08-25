@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.BookInventoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-08-25T09:10:34" hostname="linux" time="0.012">
+<testsuite name="com.example.BookInventoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-08-25T09:15:08" hostname="linux" time="0.014">
   <properties/>
-  <testcase name="adding a book increases count()" classname="com.example.BookInventoryTest" time="0.007"/>
-  <testcase name="isbn must be unique()" classname="com.example.BookInventoryTest" time="0.004"/>
+  <testcase name="adding a book increases count()" classname="com.example.BookInventoryTest" time="0.012"/>
+  <testcase name="isbn must be unique()" classname="com.example.BookInventoryTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
